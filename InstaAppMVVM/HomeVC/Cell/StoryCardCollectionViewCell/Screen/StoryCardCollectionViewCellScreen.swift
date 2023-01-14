@@ -24,9 +24,9 @@ class StoryCardCollectionViewCellScreen: UIView {
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.showsVerticalScrollIndicator = false
-        cv.backgroundColor = .red
+        cv.backgroundColor = .clear
         cv.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
-        //cv.register(StoryCardCollectionViewCell.self, forCellWithReuseIdentifier: StoryCardCollectionViewCell.identifier)
+        cv.register(StoryCollectionViewCell.self, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
         return cv
     }()
     

@@ -32,7 +32,7 @@ class StoryCollectionViewCellScreen: UIView {
        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.font = UIFont = UIFont.systemFont(ofSize: 12, weight: .semibold)
+        label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         return label
     }()
     
