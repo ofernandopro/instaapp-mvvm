@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4223C8B2973270E0042CBC8 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C8A2973270E0042CBC8 /* PostCollectionViewCell.swift */; };
+		C4223C8E297327580042CBC8 /* PostCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C8D297327580042CBC8 /* PostCollectionViewCellScreen.swift */; };
 		C4D51CAB2972065C00F83F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAA2972065C00F83F49 /* AppDelegate.swift */; };
 		C4D51CAD2972065C00F83F49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAC2972065C00F83F49 /* SceneDelegate.swift */; };
 		C4D51CAF2972065C00F83F49 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAE2972065C00F83F49 /* HomeVC.swift */; };
@@ -22,9 +24,28 @@
 		C4D51CD6297232D100F83F49 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CD5297232D100F83F49 /* Story.swift */; };
 		C4D51CDB297235B100F83F49 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CDA297235B100F83F49 /* StoryCollectionViewCell.swift */; };
 		C4D51CDE297235F600F83F49 /* StoryCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CDD297235F600F83F49 /* StoryCollectionViewCellScreen.swift */; };
+		C4F57DD82972EA3A00D4BC86 /* PostCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DD72972EA3A00D4BC86 /* PostCardCollectionViewCell.swift */; };
+		C4F57DDB2972EA7C00D4BC86 /* PostCardCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DDA2972EA7C00D4BC86 /* PostCardCollectionViewCellScreen.swift */; };
+		C4F57DDD2972EBCF00D4BC86 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DDC2972EBCF00D4BC86 /* Post.swift */; };
+		C4F57DE02972ED3D00D4BC86 /* PostCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DDF2972ED3D00D4BC86 /* PostCardViewModel.swift */; };
+		C4F57DE82972F31300D4BC86 /* InstaAppMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DE72972F31300D4BC86 /* InstaAppMVVMUITests.swift */; };
+		C4F57DEA2972F31300D4BC86 /* InstaAppMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DE92972F31300D4BC86 /* InstaAppMVVMUITestsLaunchTests.swift */; };
+		C4F57DF12972F33100D4BC86 /* HomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DF02972F33100D4BC86 /* HomeScreenUITests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C4F57DEB2972F31300D4BC86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4D51C9F2972065C00F83F49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4D51CA62972065C00F83F49;
+			remoteInfo = InstaAppMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C4223C8A2973270E0042CBC8 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4223C8D297327580042CBC8 /* PostCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		C4D51CA72972065C00F83F49 /* InstaAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D51CAA2972065C00F83F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4D51CAC2972065C00F83F49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +63,14 @@
 		C4D51CD5297232D100F83F49 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		C4D51CDA297235B100F83F49 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		C4D51CDD297235F600F83F49 /* StoryCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		C4F57DD72972EA3A00D4BC86 /* PostCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4F57DDA2972EA7C00D4BC86 /* PostCardCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		C4F57DDC2972EBCF00D4BC86 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C4F57DDF2972ED3D00D4BC86 /* PostCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardViewModel.swift; sourceTree = "<group>"; };
+		C4F57DE52972F31300D4BC86 /* InstaAppMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaAppMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F57DE72972F31300D4BC86 /* InstaAppMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppMVVMUITests.swift; sourceTree = "<group>"; };
+		C4F57DE92972F31300D4BC86 /* InstaAppMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4F57DF02972F33100D4BC86 /* HomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +81,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4F57DE22972F31300D4BC86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4223C89297326F50042CBC8 /* PostCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C4223C8C297327430042CBC8 /* Screen */,
+				C4223C8A2973270E0042CBC8 /* PostCollectionViewCell.swift */,
+			);
+			path = PostCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		C4223C8C297327430042CBC8 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C4223C8D297327580042CBC8 /* PostCollectionViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		C4D51C9E2972065C00F83F49 = {
 			isa = PBXGroup;
 			children = (
 				C4D51CA92972065C00F83F49 /* InstaAppMVVM */,
+				C4F57DE62972F31300D4BC86 /* InstaAppMVVMUITests */,
 				C4D51CA82972065C00F83F49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				C4D51CA72972065C00F83F49 /* InstaAppMVVM.app */,
+				C4F57DE52972F31300D4BC86 /* InstaAppMVVMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,8 +164,8 @@
 		C4D51CCA297213E600F83F49 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C4D51CD92972359400F83F49 /* StoryCollectionViewCell */,
-				C4D51CCB297213F100F83F49 /* StoryCardCollectionViewCell */,
+				C4F57DD52972E9FD00D4BC86 /* Post */,
+				C4F57DD42972E9E400D4BC86 /* Story */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -145,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				C4D51CD5297232D100F83F49 /* Story.swift */,
+				C4F57DDC2972EBCF00D4BC86 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +238,60 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		C4F57DD42972E9E400D4BC86 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				C4D51CCB297213F100F83F49 /* StoryCardCollectionViewCell */,
+				C4D51CD92972359400F83F49 /* StoryCollectionViewCell */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		C4F57DD52972E9FD00D4BC86 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				C4223C89297326F50042CBC8 /* PostCollectionViewCell */,
+				C4F57DD62972EA1300D4BC86 /* PostCardCollectionViewCell */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		C4F57DD62972EA1300D4BC86 /* PostCardCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C4F57DDE2972ED1900D4BC86 /* ViewModel */,
+				C4F57DD92972EA6B00D4BC86 /* Screen */,
+				C4F57DD72972EA3A00D4BC86 /* PostCardCollectionViewCell.swift */,
+			);
+			path = PostCardCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		C4F57DD92972EA6B00D4BC86 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C4F57DDA2972EA7C00D4BC86 /* PostCardCollectionViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		C4F57DDE2972ED1900D4BC86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4F57DDF2972ED3D00D4BC86 /* PostCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4F57DE62972F31300D4BC86 /* InstaAppMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4F57DE72972F31300D4BC86 /* InstaAppMVVMUITests.swift */,
+				C4F57DE92972F31300D4BC86 /* InstaAppMVVMUITestsLaunchTests.swift */,
+				C4F57DF02972F33100D4BC86 /* HomeScreenUITests.swift */,
+			);
+			path = InstaAppMVVMUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,6 +312,24 @@
 			productReference = C4D51CA72972065C00F83F49 /* InstaAppMVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C4F57DE42972F31300D4BC86 /* InstaAppMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F57DED2972F31300D4BC86 /* Build configuration list for PBXNativeTarget "InstaAppMVVMUITests" */;
+			buildPhases = (
+				C4F57DE12972F31300D4BC86 /* Sources */,
+				C4F57DE22972F31300D4BC86 /* Frameworks */,
+				C4F57DE32972F31300D4BC86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F57DEC2972F31300D4BC86 /* PBXTargetDependency */,
+			);
+			name = InstaAppMVVMUITests;
+			productName = InstaAppMVVMUITests;
+			productReference = C4F57DE52972F31300D4BC86 /* InstaAppMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +342,10 @@
 				TargetAttributes = {
 					C4D51CA62972065C00F83F49 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					C4F57DE42972F31300D4BC86 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C4D51CA62972065C00F83F49;
 					};
 				};
 			};
@@ -231,6 +363,7 @@
 			projectRoot = "";
 			targets = (
 				C4D51CA62972065C00F83F49 /* InstaAppMVVM */,
+				C4F57DE42972F31300D4BC86 /* InstaAppMVVMUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +378,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4F57DE32972F31300D4BC86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -253,14 +393,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4D51CC529720F8D00F83F49 /* UIViewExtension.swift in Sources */,
+				C4223C8E297327580042CBC8 /* PostCollectionViewCellScreen.swift in Sources */,
 				C4D51CDE297235F600F83F49 /* StoryCollectionViewCellScreen.swift in Sources */,
+				C4F57DD82972EA3A00D4BC86 /* PostCardCollectionViewCell.swift in Sources */,
 				C4D51CC129720D7A00F83F49 /* HomeScreen.swift in Sources */,
 				C4D51CCD2972140A00F83F49 /* StoryCardCollectionViewCell.swift in Sources */,
 				C4D51CC92972128A00F83F49 /* HomeViewModel.swift in Sources */,
 				C4D51CDB297235B100F83F49 /* StoryCollectionViewCell.swift in Sources */,
 				C4D51CD32972194700F83F49 /* StoryCardViewModel.swift in Sources */,
+				C4223C8B2973270E0042CBC8 /* PostCollectionViewCell.swift in Sources */,
+				C4F57DE02972ED3D00D4BC86 /* PostCardViewModel.swift in Sources */,
+				C4F57DDB2972EA7C00D4BC86 /* PostCardCollectionViewCellScreen.swift in Sources */,
 				C4D51CAF2972065C00F83F49 /* HomeVC.swift in Sources */,
 				C4D51CAB2972065C00F83F49 /* AppDelegate.swift in Sources */,
+				C4F57DDD2972EBCF00D4BC86 /* Post.swift in Sources */,
 				C4D51CAD2972065C00F83F49 /* SceneDelegate.swift in Sources */,
 				C4D51CC72972107F00F83F49 /* UIColorExtension.swift in Sources */,
 				C4D51CD02972143E00F83F49 /* StoryCardCollectionViewCellScreen.swift in Sources */,
@@ -268,7 +414,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4F57DE12972F31300D4BC86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F57DEA2972F31300D4BC86 /* InstaAppMVVMUITestsLaunchTests.swift in Sources */,
+				C4F57DF12972F33100D4BC86 /* HomeScreenUITests.swift in Sources */,
+				C4F57DE82972F31300D4BC86 /* InstaAppMVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4F57DEC2972F31300D4BC86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4D51CA62972065C00F83F49 /* InstaAppMVVM */;
+			targetProxy = C4F57DEB2972F31300D4BC86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C4D51CB52972066000F83F49 /* LaunchScreen.storyboard */ = {
@@ -452,6 +616,38 @@
 			};
 			name = Release;
 		};
+		C4F57DEE2972F31300D4BC86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandomoreira.InstaAppMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaAppMVVM;
+			};
+			name = Debug;
+		};
+		C4F57DEF2972F31300D4BC86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandomoreira.InstaAppMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaAppMVVM;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -469,6 +665,15 @@
 			buildConfigurations = (
 				C4D51CBC2972066000F83F49 /* Debug */,
 				C4D51CBD2972066000F83F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F57DED2972F31300D4BC86 /* Build configuration list for PBXNativeTarget "InstaAppMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F57DEE2972F31300D4BC86 /* Debug */,
+				C4F57DEF2972F31300D4BC86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
