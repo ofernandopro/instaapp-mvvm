@@ -18,6 +18,10 @@
 		C4D51CC92972128A00F83F49 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CC82972128A00F83F49 /* HomeViewModel.swift */; };
 		C4D51CCD2972140A00F83F49 /* StoryCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CCC2972140A00F83F49 /* StoryCardCollectionViewCell.swift */; };
 		C4D51CD02972143E00F83F49 /* StoryCardCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CCF2972143E00F83F49 /* StoryCardCollectionViewCellScreen.swift */; };
+		C4D51CD32972194700F83F49 /* StoryCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CD22972194700F83F49 /* StoryCardViewModel.swift */; };
+		C4D51CD6297232D100F83F49 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CD5297232D100F83F49 /* Story.swift */; };
+		C4D51CDB297235B100F83F49 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CDA297235B100F83F49 /* StoryCollectionViewCell.swift */; };
+		C4D51CDE297235F600F83F49 /* StoryCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CDD297235F600F83F49 /* StoryCollectionViewCellScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		C4D51CC82972128A00F83F49 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C4D51CCC2972140A00F83F49 /* StoryCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		C4D51CCF2972143E00F83F49 /* StoryCardCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		C4D51CD22972194700F83F49 /* StoryCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardViewModel.swift; sourceTree = "<group>"; };
+		C4D51CD5297232D100F83F49 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		C4D51CDA297235B100F83F49 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4D51CDD297235F600F83F49 /* StoryCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		C4D51CA92972065C00F83F49 /* InstaAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C4D51CD4297232C300F83F49 /* Model */,
 				C4D51CC229720F4F00F83F49 /* Extension */,
 				C4D51CBE29720D5C00F83F49 /* HomeVC */,
 				C4D51CAA2972065C00F83F49 /* AppDelegate.swift */,
@@ -81,9 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				C4D51CCA297213E600F83F49 /* Cell */,
+				C4D51CD82972333C00F83F49 /* ViewModel */,
+				C4D51CD72972331300F83F49 /* Screen */,
 				C4D51CAE2972065C00F83F49 /* HomeVC.swift */,
-				C4D51CC82972128A00F83F49 /* HomeViewModel.swift */,
-				C4D51CC029720D7A00F83F49 /* HomeScreen.swift */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -100,6 +109,7 @@
 		C4D51CCA297213E600F83F49 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C4D51CD92972359400F83F49 /* StoryCollectionViewCell */,
 				C4D51CCB297213F100F83F49 /* StoryCardCollectionViewCell */,
 			);
 			path = Cell;
@@ -108,6 +118,7 @@
 		C4D51CCB297213F100F83F49 /* StoryCardCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				C4D51CD12972192A00F83F49 /* ViewModel */,
 				C4D51CCE2972142A00F83F49 /* Screen */,
 				C4D51CCC2972140A00F83F49 /* StoryCardCollectionViewCell.swift */,
 			);
@@ -118,6 +129,55 @@
 			isa = PBXGroup;
 			children = (
 				C4D51CCF2972143E00F83F49 /* StoryCardCollectionViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		C4D51CD12972192A00F83F49 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4D51CD22972194700F83F49 /* StoryCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4D51CD4297232C300F83F49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4D51CD5297232D100F83F49 /* Story.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4D51CD72972331300F83F49 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C4D51CC029720D7A00F83F49 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		C4D51CD82972333C00F83F49 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4D51CC82972128A00F83F49 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4D51CD92972359400F83F49 /* StoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C4D51CDC297235E000F83F49 /* Screen */,
+				C4D51CDA297235B100F83F49 /* StoryCollectionViewCell.swift */,
+			);
+			path = StoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		C4D51CDC297235E000F83F49 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C4D51CDD297235F600F83F49 /* StoryCollectionViewCellScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -193,14 +253,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4D51CC529720F8D00F83F49 /* UIViewExtension.swift in Sources */,
+				C4D51CDE297235F600F83F49 /* StoryCollectionViewCellScreen.swift in Sources */,
 				C4D51CC129720D7A00F83F49 /* HomeScreen.swift in Sources */,
 				C4D51CCD2972140A00F83F49 /* StoryCardCollectionViewCell.swift in Sources */,
 				C4D51CC92972128A00F83F49 /* HomeViewModel.swift in Sources */,
+				C4D51CDB297235B100F83F49 /* StoryCollectionViewCell.swift in Sources */,
+				C4D51CD32972194700F83F49 /* StoryCardViewModel.swift in Sources */,
 				C4D51CAF2972065C00F83F49 /* HomeVC.swift in Sources */,
 				C4D51CAB2972065C00F83F49 /* AppDelegate.swift in Sources */,
 				C4D51CAD2972065C00F83F49 /* SceneDelegate.swift in Sources */,
 				C4D51CC72972107F00F83F49 /* UIColorExtension.swift in Sources */,
 				C4D51CD02972143E00F83F49 /* StoryCardCollectionViewCellScreen.swift in Sources */,
+				C4D51CD6297232D100F83F49 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

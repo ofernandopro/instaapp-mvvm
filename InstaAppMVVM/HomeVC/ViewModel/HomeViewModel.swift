@@ -8,6 +8,20 @@
 import UIKit
 
 class HomeViewModel {
+    
+    private var story = [
+        Story(image: "img1", userName: "Add Story"),
+        Story(image: "img2", userName: "Jack"),
+        Story(image: "img3", userName: "Carolina"),
+        Story(image: "img4", userName: "Samuel"),
+        Story(image: "img5", userName: "Ariana"),
+        Story(image: "img6", userName: "puggy_101"),
+        Story(image: "img7", userName: "fajn_d"),
+    ]
+    
+    public var getListStory: [Story] {
+        story
+    }
 
     public var numberOfItems: Int {
         1
