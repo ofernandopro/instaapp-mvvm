@@ -46,7 +46,7 @@ class PostCollectionViewCellScreen: UIView {
         tap.numberOfTapsRequired = 1
         img.addGestureRecognizer(tap)
         img.isUserInteractionEnabled = true
-        img.isHidden = false
+        img.isHidden = true
         return img
     }()
     
@@ -67,15 +67,34 @@ class PostCollectionViewCellScreen: UIView {
         img.translatesAutoresizingMaskIntoConstraints = false
         img.image = UIImage(named: "white-heart")
         img.contentMode = .scaleAspectFill
-        img.isHidden = false
+        img.isHidden = true
         return img
     }()
     
     @objc func tappedLikeImageView() {
-        
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseIn) {
+            self.likeImageView.center.y += 50
+        } completion: { finished in
+            self.likeImageView.center.y -= 50
+            self.likeImageView.isHidden = true
+        }
     }
     
     @objc func tappedPostImageView() {
+        heartImageView.isHidden = false
+        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: .curveEaseIn) {
+            self.heartImageView.transform = .init(scaleX: 1.8, y: 1.8)
+            self.postImageView.transform = .init(scaleX: 1.05, y: 1.05)
+            self.likeImageView.center.y += 50
+        } completion: { finished in
+            UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: .curveEaseIn) {
+                self.postImageView.transform = .identity
+                self.likeImageView.center.y -= 50
+                self.likeImageView.isHidden = false
+            }
+            self.heartImageView.transform = .identity
+            self.heartImageView.isHidden = true
+        }
         
     }
     
