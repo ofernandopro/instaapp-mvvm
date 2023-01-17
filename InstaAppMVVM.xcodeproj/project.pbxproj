@@ -11,6 +11,7 @@
 		C4223C8E297327580042CBC8 /* PostCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C8D297327580042CBC8 /* PostCollectionViewCellScreen.swift */; };
 		C4321E102976284B00FE218A /* InstaAppMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4321E0F2976284B00FE218A /* InstaAppMVVMTests.swift */; };
 		C4321E172976286E00FE218A /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4321E162976286E00FE218A /* HomeViewModelTests.swift */; };
+		C47ADC492976CB17007A7566 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C47ADC482976CB17007A7566 /* GoogleService-Info.plist */; };
 		C4D51CAB2972065C00F83F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAA2972065C00F83F49 /* AppDelegate.swift */; };
 		C4D51CAD2972065C00F83F49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAC2972065C00F83F49 /* SceneDelegate.swift */; };
 		C4D51CAF2972065C00F83F49 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAE2972065C00F83F49 /* HomeVC.swift */; };
@@ -64,6 +65,7 @@
 		C4321E0F2976284B00FE218A /* InstaAppMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppMVVMTests.swift; sourceTree = "<group>"; };
 		C4321E162976286E00FE218A /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		C45687A7FA2C7620DF32E78A /* Pods_InstaAppMVVM_InstaAppMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaAppMVVM_InstaAppMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47ADC482976CB17007A7566 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4D51CA72972065C00F83F49 /* InstaAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D51CAA2972065C00F83F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4D51CAC2972065C00F83F49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				C4D51CB32972066000F83F49 /* Assets.xcassets */,
 				C4D51CB52972066000F83F49 /* LaunchScreen.storyboard */,
 				C4D51CB82972066000F83F49 /* Info.plist */,
+				C47ADC482976CB17007A7566 /* GoogleService-Info.plist */,
 			);
 			path = InstaAppMVVM;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				C4D51CA32972065C00F83F49 /* Sources */,
 				C4D51CA42972065C00F83F49 /* Frameworks */,
 				C4D51CA52972065C00F83F49 /* Resources */,
+				AD1F73F75DF83E18B9475BD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -469,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4D51CB72972066000F83F49 /* LaunchScreen.storyboard in Resources */,
+				C47ADC492976CB17007A7566 /* GoogleService-Info.plist in Resources */,
 				C4D51CB42972066000F83F49 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +525,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaAppMVVM-InstaAppMVVMUITests/Pods-InstaAppMVVM-InstaAppMVVMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1F73F75DF83E18B9475BD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaAppMVVM/Pods-InstaAppMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaAppMVVM/Pods-InstaAppMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaAppMVVM/Pods-InstaAppMVVM-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5FCBD9A25B5263B2694793E /* [CP] Check Pods Manifest.lock */ = {

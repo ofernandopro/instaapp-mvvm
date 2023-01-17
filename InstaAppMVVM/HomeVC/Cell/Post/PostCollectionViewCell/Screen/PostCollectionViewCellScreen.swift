@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class PostCollectionViewCellScreen: UIView {
 
@@ -106,11 +107,21 @@ class PostCollectionViewCellScreen: UIView {
         cardView.addSubview(likeImageView)
         cardView.addSubview(postImageView)
         cardView.addSubview(heartImageView)
-        configConstraints()
+        configConstraintsSnapKit()
+        //configConstraints()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func configConstraintsSnapKit() {
+        configCardViewConstraints()
+        configLikeImageViewConstraints()
+        configProfileImageViewConstraints()
+        configUserNameLabelConstraints()
+        configPostImageViewConstraints()
+        configHeartImageViewConstraints()
     }
     
     private func configConstraints() {
@@ -147,5 +158,58 @@ class PostCollectionViewCellScreen: UIView {
             
         ])
     }
+    
+    private func configCardViewConstraints() {
+        cardView.snp.makeConstraints { make in
+            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(15)
+            make.bottom.equalTo(safeAreaLayoutGuide.snp.bottom).inset(10)
+            make.leading.equalToSuperview().offset(10)
+            make.trailing.equalToSuperview().inset(15)
+        }
+    }
+    
+    private func configLikeImageViewConstraints() {
+        likeImageView.snp.makeConstraints { make in
+            make.top.equalTo(cardView.snp.top).offset(19)
+            make.trailing.equalTo(cardView.snp.trailing).inset(20)
+            make.height.equalTo(25)
+            make.width.equalTo(25)
+        }
+    }
+    
+    private func configProfileImageViewConstraints() {
+        profileImageView.snp.makeConstraints { make in
+            make.top.equalTo(cardView.snp.top).offset(17)
+            make.leading.equalTo(cardView.snp.leading).offset(20)
+            make.height.equalTo(30)
+            make.width.equalTo(30)
+        }
+    }
+    
+    private func configUserNameLabelConstraints() {
+        userNameLabel.snp.makeConstraints { make in
+            make.top.equalTo(cardView.snp.top).offset(24)
+            make.leading.equalTo(profileImageView.snp.trailing).offset(10)
+            make.trailing.equalTo(likeImageView.snp.leading).inset(5)
+        }
+    }
 
+    private func configPostImageViewConstraints() {
+        postImageView.snp.makeConstraints { make in
+            make.top.equalTo(profileImageView.snp.bottom).offset(17)
+            make.leading.equalTo(cardView.snp.leading).offset(7)
+            make.trailing.equalTo(cardView.snp.trailing).inset(7)
+            make.bottom.equalTo(cardView.snp.bottom).inset(7)
+        }
+    }
+    
+    private func configHeartImageViewConstraints() {
+        heartImageView.snp.makeConstraints { make in
+            make.centerX.equalTo(postImageView.snp.centerX)
+            make.centerY.equalTo(postImageView.snp.centerY)
+            make.height.equalTo(70)
+            make.width.equalTo(70)
+        }
+    }
+    
 }
