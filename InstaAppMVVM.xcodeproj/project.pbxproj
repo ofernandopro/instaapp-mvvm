@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C4223C8B2973270E0042CBC8 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C8A2973270E0042CBC8 /* PostCollectionViewCell.swift */; };
 		C4223C8E297327580042CBC8 /* PostCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C8D297327580042CBC8 /* PostCollectionViewCellScreen.swift */; };
+		C4321E102976284B00FE218A /* InstaAppMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4321E0F2976284B00FE218A /* InstaAppMVVMTests.swift */; };
+		C4321E172976286E00FE218A /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4321E162976286E00FE218A /* HomeViewModelTests.swift */; };
 		C4D51CAB2972065C00F83F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAA2972065C00F83F49 /* AppDelegate.swift */; };
 		C4D51CAD2972065C00F83F49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAC2972065C00F83F49 /* SceneDelegate.swift */; };
 		C4D51CAF2972065C00F83F49 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAE2972065C00F83F49 /* HomeVC.swift */; };
@@ -31,9 +33,18 @@
 		C4F57DE82972F31300D4BC86 /* InstaAppMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DE72972F31300D4BC86 /* InstaAppMVVMUITests.swift */; };
 		C4F57DEA2972F31300D4BC86 /* InstaAppMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DE92972F31300D4BC86 /* InstaAppMVVMUITestsLaunchTests.swift */; };
 		C4F57DF12972F33100D4BC86 /* HomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F57DF02972F33100D4BC86 /* HomeScreenUITests.swift */; };
+		E65E562BB3C33EEFC2D583D8 /* Pods_InstaAppMVVM_InstaAppMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45687A7FA2C7620DF32E78A /* Pods_InstaAppMVVM_InstaAppMVVMUITests.framework */; };
+		F2CF69B0E8F681128563896B /* Pods_InstaAppMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79EF9BE384B6AD5F7FFF9AD /* Pods_InstaAppMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C4321E112976284B00FE218A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4D51C9F2972065C00F83F49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4D51CA62972065C00F83F49;
+			remoteInfo = InstaAppMVVM;
+		};
 		C4F57DEB2972F31300D4BC86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4D51C9F2972065C00F83F49 /* Project object */;
@@ -44,8 +55,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		096EB0D21CFBA7328A53A37C /* Pods-InstaAppMVVM-InstaAppMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaAppMVVM-InstaAppMVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstaAppMVVM-InstaAppMVVMUITests/Pods-InstaAppMVVM-InstaAppMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		363BC1C5F2D1CDE1896CA7EC /* Pods-InstaAppMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaAppMVVM.debug.xcconfig"; path = "Target Support Files/Pods-InstaAppMVVM/Pods-InstaAppMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		61FE1A6870126E269C56817A /* Pods-InstaAppMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaAppMVVM.release.xcconfig"; path = "Target Support Files/Pods-InstaAppMVVM/Pods-InstaAppMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		C4223C8A2973270E0042CBC8 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		C4223C8D297327580042CBC8 /* PostCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		C4321E0D2976284B00FE218A /* InstaAppMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaAppMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4321E0F2976284B00FE218A /* InstaAppMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppMVVMTests.swift; sourceTree = "<group>"; };
+		C4321E162976286E00FE218A /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		C45687A7FA2C7620DF32E78A /* Pods_InstaAppMVVM_InstaAppMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaAppMVVM_InstaAppMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D51CA72972065C00F83F49 /* InstaAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D51CAA2972065C00F83F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4D51CAC2972065C00F83F49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,13 +89,23 @@
 		C4F57DE72972F31300D4BC86 /* InstaAppMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppMVVMUITests.swift; sourceTree = "<group>"; };
 		C4F57DE92972F31300D4BC86 /* InstaAppMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C4F57DF02972F33100D4BC86 /* HomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenUITests.swift; sourceTree = "<group>"; };
+		D79EF9BE384B6AD5F7FFF9AD /* Pods_InstaAppMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaAppMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F760622F645752533DE4177E /* Pods-InstaAppMVVM-InstaAppMVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaAppMVVM-InstaAppMVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-InstaAppMVVM-InstaAppMVVMUITests/Pods-InstaAppMVVM-InstaAppMVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C4321E0A2976284B00FE218A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4D51CA42972065C00F83F49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CF69B0E8F681128563896B /* Pods_InstaAppMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +113,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65E562BB3C33EEFC2D583D8 /* Pods_InstaAppMVVM_InstaAppMVVMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93DF36B03FD24991A6F12FC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D79EF9BE384B6AD5F7FFF9AD /* Pods_InstaAppMVVM.framework */,
+				C45687A7FA2C7620DF32E78A /* Pods_InstaAppMVVM_InstaAppMVVMUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC3C92AFC3AE28F7E5CB019E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				363BC1C5F2D1CDE1896CA7EC /* Pods-InstaAppMVVM.debug.xcconfig */,
+				61FE1A6870126E269C56817A /* Pods-InstaAppMVVM.release.xcconfig */,
+				096EB0D21CFBA7328A53A37C /* Pods-InstaAppMVVM-InstaAppMVVMUITests.debug.xcconfig */,
+				F760622F645752533DE4177E /* Pods-InstaAppMVVM-InstaAppMVVMUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C4223C89297326F50042CBC8 /* PostCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +157,24 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		C4321E0E2976284B00FE218A /* InstaAppMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4321E0F2976284B00FE218A /* InstaAppMVVMTests.swift */,
+				C4321E162976286E00FE218A /* HomeViewModelTests.swift */,
+			);
+			path = InstaAppMVVMTests;
+			sourceTree = "<group>";
+		};
 		C4D51C9E2972065C00F83F49 = {
 			isa = PBXGroup;
 			children = (
 				C4D51CA92972065C00F83F49 /* InstaAppMVVM */,
 				C4F57DE62972F31300D4BC86 /* InstaAppMVVMUITests */,
+				C4321E0E2976284B00FE218A /* InstaAppMVVMTests */,
 				C4D51CA82972065C00F83F49 /* Products */,
+				AC3C92AFC3AE28F7E5CB019E /* Pods */,
+				93DF36B03FD24991A6F12FC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +183,7 @@
 			children = (
 				C4D51CA72972065C00F83F49 /* InstaAppMVVM.app */,
 				C4F57DE52972F31300D4BC86 /* InstaAppMVVMUITests.xctest */,
+				C4321E0D2976284B00FE218A /* InstaAppMVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,10 +357,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C4321E0C2976284B00FE218A /* InstaAppMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4321E152976284B00FE218A /* Build configuration list for PBXNativeTarget "InstaAppMVVMTests" */;
+			buildPhases = (
+				C4321E092976284B00FE218A /* Sources */,
+				C4321E0A2976284B00FE218A /* Frameworks */,
+				C4321E0B2976284B00FE218A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4321E122976284B00FE218A /* PBXTargetDependency */,
+			);
+			name = InstaAppMVVMTests;
+			productName = InstaAppMVVMTests;
+			productReference = C4321E0D2976284B00FE218A /* InstaAppMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C4D51CA62972065C00F83F49 /* InstaAppMVVM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4D51CBB2972066000F83F49 /* Build configuration list for PBXNativeTarget "InstaAppMVVM" */;
 			buildPhases = (
+				768DC66FF408400A567F3698 /* [CP] Check Pods Manifest.lock */,
 				C4D51CA32972065C00F83F49 /* Sources */,
 				C4D51CA42972065C00F83F49 /* Frameworks */,
 				C4D51CA52972065C00F83F49 /* Resources */,
@@ -316,9 +397,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4F57DED2972F31300D4BC86 /* Build configuration list for PBXNativeTarget "InstaAppMVVMUITests" */;
 			buildPhases = (
+				C5FCBD9A25B5263B2694793E /* [CP] Check Pods Manifest.lock */,
 				C4F57DE12972F31300D4BC86 /* Sources */,
 				C4F57DE22972F31300D4BC86 /* Frameworks */,
 				C4F57DE32972F31300D4BC86 /* Resources */,
+				9B5F79AAE642F89DD2E233B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +423,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					C4321E0C2976284B00FE218A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C4D51CA62972065C00F83F49;
+					};
 					C4D51CA62972065C00F83F49 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -364,11 +451,19 @@
 			targets = (
 				C4D51CA62972065C00F83F49 /* InstaAppMVVM */,
 				C4F57DE42972F31300D4BC86 /* InstaAppMVVMUITests */,
+				C4321E0C2976284B00FE218A /* InstaAppMVVMTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C4321E0B2976284B00FE218A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4D51CA52972065C00F83F49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,7 +482,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		768DC66FF408400A567F3698 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaAppMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B5F79AAE642F89DD2E233B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaAppMVVM-InstaAppMVVMUITests/Pods-InstaAppMVVM-InstaAppMVVMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaAppMVVM-InstaAppMVVMUITests/Pods-InstaAppMVVM-InstaAppMVVMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaAppMVVM-InstaAppMVVMUITests/Pods-InstaAppMVVM-InstaAppMVVMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5FCBD9A25B5263B2694793E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaAppMVVM-InstaAppMVVMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		C4321E092976284B00FE218A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4321E102976284B00FE218A /* InstaAppMVVMTests.swift in Sources */,
+				C4321E172976286E00FE218A /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4D51CA32972065C00F83F49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,6 +595,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C4321E122976284B00FE218A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4D51CA62972065C00F83F49 /* InstaAppMVVM */;
+			targetProxy = C4321E112976284B00FE218A /* PBXContainerItemProxy */;
+		};
 		C4F57DEC2972F31300D4BC86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C4D51CA62972065C00F83F49 /* InstaAppMVVM */;
@@ -446,6 +619,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C4321E132976284B00FE218A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandomoreira.InstaAppMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaAppMVVM.app/InstaAppMVVM";
+			};
+			name = Debug;
+		};
+		C4321E142976284B00FE218A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandomoreira.InstaAppMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaAppMVVM.app/InstaAppMVVM";
+			};
+			name = Release;
+		};
 		C4D51CB92972066000F83F49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -564,6 +771,7 @@
 		};
 		C4D51CBC2972066000F83F49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363BC1C5F2D1CDE1896CA7EC /* Pods-InstaAppMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -591,6 +799,7 @@
 		};
 		C4D51CBD2972066000F83F49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61FE1A6870126E269C56817A /* Pods-InstaAppMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -618,6 +827,7 @@
 		};
 		C4F57DEE2972F31300D4BC86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096EB0D21CFBA7328A53A37C /* Pods-InstaAppMVVM-InstaAppMVVMUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -634,6 +844,7 @@
 		};
 		C4F57DEF2972F31300D4BC86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F760622F645752533DE4177E /* Pods-InstaAppMVVM-InstaAppMVVMUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -651,6 +862,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C4321E152976284B00FE218A /* Build configuration list for PBXNativeTarget "InstaAppMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4321E132976284B00FE218A /* Debug */,
+				C4321E142976284B00FE218A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C4D51CA22972065C00F83F49 /* Build configuration list for PBXProject "InstaAppMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

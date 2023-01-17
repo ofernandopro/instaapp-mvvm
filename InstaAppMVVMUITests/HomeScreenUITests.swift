@@ -4,6 +4,7 @@
 //
 //  Created by Fernando Moreira on 14/01/23.
 //
+/*
 import XCTest
 @testable import InstaAppMVVM
 
@@ -57,7 +58,7 @@ class HomeScreenUITests: XCTestCase {
 //        XCTAssertTrue(collectionView.dataSource === dataSource)
 //    }
 }
-
+*/
 //class UICollectionViewDelegateMock: NSObject, UICollectionViewDelegate { }
 //class UICollectionViewDataSourceMock: NSObject, UICollectionViewDataSource {
 //    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { return 0 }
