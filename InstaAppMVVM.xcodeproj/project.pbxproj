@@ -12,6 +12,9 @@
 		C4321E102976284B00FE218A /* InstaAppMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4321E0F2976284B00FE218A /* InstaAppMVVMTests.swift */; };
 		C4321E172976286E00FE218A /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4321E162976286E00FE218A /* HomeViewModelTests.swift */; };
 		C47ADC492976CB17007A7566 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C47ADC482976CB17007A7566 /* GoogleService-Info.plist */; };
+		C47ADC4C2976DC8E007A7566 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC4B2976DC8E007A7566 /* LoginVC.swift */; };
+		C47ADC4F2976DCA9007A7566 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC4E2976DCA9007A7566 /* LoginScreen.swift */; };
+		C47ADC532976E423007A7566 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC522976E423007A7566 /* LoginViewModel.swift */; };
 		C4D51CAB2972065C00F83F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAA2972065C00F83F49 /* AppDelegate.swift */; };
 		C4D51CAD2972065C00F83F49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAC2972065C00F83F49 /* SceneDelegate.swift */; };
 		C4D51CAF2972065C00F83F49 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D51CAE2972065C00F83F49 /* HomeVC.swift */; };
@@ -66,6 +69,9 @@
 		C4321E162976286E00FE218A /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		C45687A7FA2C7620DF32E78A /* Pods_InstaAppMVVM_InstaAppMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaAppMVVM_InstaAppMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47ADC482976CB17007A7566 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C47ADC4B2976DC8E007A7566 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C47ADC4E2976DCA9007A7566 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		C47ADC522976E423007A7566 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C4D51CA72972065C00F83F49 /* InstaAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D51CAA2972065C00F83F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4D51CAC2972065C00F83F49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +174,40 @@
 			path = InstaAppMVVMTests;
 			sourceTree = "<group>";
 		};
+		C47ADC4A2976DC76007A7566 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				C47ADC512976E40C007A7566 /* ViewModel */,
+				C47ADC4D2976DC98007A7566 /* Screen */,
+				C47ADC4B2976DC8E007A7566 /* LoginVC.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		C47ADC4D2976DC98007A7566 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C47ADC4E2976DCA9007A7566 /* LoginScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		C47ADC502976E2C5007A7566 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C4D51CAE2972065C00F83F49 /* HomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C47ADC512976E40C007A7566 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C47ADC522976E423007A7566 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C4D51C9E2972065C00F83F49 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +233,7 @@
 		C4D51CA92972065C00F83F49 /* InstaAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C47ADC4A2976DC76007A7566 /* LoginVC */,
 				C4D51CD4297232C300F83F49 /* Model */,
 				C4D51CC229720F4F00F83F49 /* Extension */,
 				C4D51CBE29720D5C00F83F49 /* HomeVC */,
@@ -209,10 +250,10 @@
 		C4D51CBE29720D5C00F83F49 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				C47ADC502976E2C5007A7566 /* VC */,
 				C4D51CCA297213E600F83F49 /* Cell */,
 				C4D51CD82972333C00F83F49 /* ViewModel */,
 				C4D51CD72972331300F83F49 /* Screen */,
-				C4D51CAE2972065C00F83F49 /* HomeVC.swift */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -584,6 +625,7 @@
 			files = (
 				C4D51CC529720F8D00F83F49 /* UIViewExtension.swift in Sources */,
 				C4223C8E297327580042CBC8 /* PostCollectionViewCellScreen.swift in Sources */,
+				C47ADC532976E423007A7566 /* LoginViewModel.swift in Sources */,
 				C4D51CDE297235F600F83F49 /* StoryCollectionViewCellScreen.swift in Sources */,
 				C4F57DD82972EA3A00D4BC86 /* PostCardCollectionViewCell.swift in Sources */,
 				C4D51CC129720D7A00F83F49 /* HomeScreen.swift in Sources */,
@@ -593,9 +635,11 @@
 				C4D51CD32972194700F83F49 /* StoryCardViewModel.swift in Sources */,
 				C4223C8B2973270E0042CBC8 /* PostCollectionViewCell.swift in Sources */,
 				C4F57DE02972ED3D00D4BC86 /* PostCardViewModel.swift in Sources */,
+				C47ADC4F2976DCA9007A7566 /* LoginScreen.swift in Sources */,
 				C4F57DDB2972EA7C00D4BC86 /* PostCardCollectionViewCellScreen.swift in Sources */,
 				C4D51CAF2972065C00F83F49 /* HomeVC.swift in Sources */,
 				C4D51CAB2972065C00F83F49 /* AppDelegate.swift in Sources */,
+				C47ADC4C2976DC8E007A7566 /* LoginVC.swift in Sources */,
 				C4F57DDD2972EBCF00D4BC86 /* Post.swift in Sources */,
 				C4D51CAD2972065C00F83F49 /* SceneDelegate.swift in Sources */,
 				C4D51CC72972107F00F83F49 /* UIColorExtension.swift in Sources */,
