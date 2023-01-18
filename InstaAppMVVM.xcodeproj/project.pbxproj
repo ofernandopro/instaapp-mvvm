@@ -11,6 +11,10 @@
 		C4223C8E297327580042CBC8 /* PostCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4223C8D297327580042CBC8 /* PostCollectionViewCellScreen.swift */; };
 		C4321E102976284B00FE218A /* InstaAppMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4321E0F2976284B00FE218A /* InstaAppMVVMTests.swift */; };
 		C4321E172976286E00FE218A /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4321E162976286E00FE218A /* HomeViewModelTests.swift */; };
+		C45C2132297846ED00477886 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C2131297846ED00477886 /* Alert.swift */; };
+		C45C2139297848C600477886 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C2138297848C600477886 /* RegisterVC.swift */; };
+		C45C213B297848D900477886 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C213A297848D900477886 /* RegisterScreen.swift */; };
+		C45C213D297848F100477886 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C213C297848F100477886 /* RegisterViewModel.swift */; };
 		C47ADC492976CB17007A7566 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C47ADC482976CB17007A7566 /* GoogleService-Info.plist */; };
 		C47ADC4C2976DC8E007A7566 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC4B2976DC8E007A7566 /* LoginVC.swift */; };
 		C47ADC4F2976DCA9007A7566 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC4E2976DCA9007A7566 /* LoginScreen.swift */; };
@@ -68,6 +72,10 @@
 		C4321E0F2976284B00FE218A /* InstaAppMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppMVVMTests.swift; sourceTree = "<group>"; };
 		C4321E162976286E00FE218A /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		C45687A7FA2C7620DF32E78A /* Pods_InstaAppMVVM_InstaAppMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaAppMVVM_InstaAppMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45C2131297846ED00477886 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C45C2138297848C600477886 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		C45C213A297848D900477886 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		C45C213C297848F100477886 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		C47ADC482976CB17007A7566 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C47ADC4B2976DC8E007A7566 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C47ADC4E2976DCA9007A7566 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -174,12 +182,62 @@
 			path = InstaAppMVVMTests;
 			sourceTree = "<group>";
 		};
+		C45C2130297846D900477886 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C45C2131297846ED00477886 /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		C45C21332978480400477886 /* RegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				C45C2137297848B300477886 /* Screen */,
+				C45C2136297848AE00477886 /* ViewModel */,
+				C45C2135297848AA00477886 /* VC */,
+			);
+			path = RegisterVC;
+			sourceTree = "<group>";
+		};
+		C45C21342978486F00477886 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C47ADC4B2976DC8E007A7566 /* LoginVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C45C2135297848AA00477886 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C45C2138297848C600477886 /* RegisterVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C45C2136297848AE00477886 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C45C213C297848F100477886 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C45C2137297848B300477886 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C45C213A297848D900477886 /* RegisterScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		C47ADC4A2976DC76007A7566 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
+				C45C21342978486F00477886 /* VC */,
 				C47ADC512976E40C007A7566 /* ViewModel */,
 				C47ADC4D2976DC98007A7566 /* Screen */,
-				C47ADC4B2976DC8E007A7566 /* LoginVC.swift */,
 			);
 			path = LoginVC;
 			sourceTree = "<group>";
@@ -233,9 +291,11 @@
 		C4D51CA92972065C00F83F49 /* InstaAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C47ADC4A2976DC76007A7566 /* LoginVC */,
+				C45C2130297846D900477886 /* Alert */,
 				C4D51CD4297232C300F83F49 /* Model */,
 				C4D51CC229720F4F00F83F49 /* Extension */,
+				C47ADC4A2976DC76007A7566 /* LoginVC */,
+				C45C21332978480400477886 /* RegisterVC */,
 				C4D51CBE29720D5C00F83F49 /* HomeVC */,
 				C4D51CAA2972065C00F83F49 /* AppDelegate.swift */,
 				C4D51CAC2972065C00F83F49 /* SceneDelegate.swift */,
@@ -251,9 +311,9 @@
 			isa = PBXGroup;
 			children = (
 				C47ADC502976E2C5007A7566 /* VC */,
-				C4D51CCA297213E600F83F49 /* Cell */,
 				C4D51CD82972333C00F83F49 /* ViewModel */,
 				C4D51CD72972331300F83F49 /* Screen */,
+				C4D51CCA297213E600F83F49 /* Cell */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -626,11 +686,14 @@
 				C4D51CC529720F8D00F83F49 /* UIViewExtension.swift in Sources */,
 				C4223C8E297327580042CBC8 /* PostCollectionViewCellScreen.swift in Sources */,
 				C47ADC532976E423007A7566 /* LoginViewModel.swift in Sources */,
+				C45C2132297846ED00477886 /* Alert.swift in Sources */,
 				C4D51CDE297235F600F83F49 /* StoryCollectionViewCellScreen.swift in Sources */,
+				C45C213B297848D900477886 /* RegisterScreen.swift in Sources */,
 				C4F57DD82972EA3A00D4BC86 /* PostCardCollectionViewCell.swift in Sources */,
 				C4D51CC129720D7A00F83F49 /* HomeScreen.swift in Sources */,
 				C4D51CCD2972140A00F83F49 /* StoryCardCollectionViewCell.swift in Sources */,
 				C4D51CC92972128A00F83F49 /* HomeViewModel.swift in Sources */,
+				C45C2139297848C600477886 /* RegisterVC.swift in Sources */,
 				C4D51CDB297235B100F83F49 /* StoryCollectionViewCell.swift in Sources */,
 				C4D51CD32972194700F83F49 /* StoryCardViewModel.swift in Sources */,
 				C4223C8B2973270E0042CBC8 /* PostCollectionViewCell.swift in Sources */,
@@ -641,6 +704,7 @@
 				C4D51CAB2972065C00F83F49 /* AppDelegate.swift in Sources */,
 				C47ADC4C2976DC8E007A7566 /* LoginVC.swift in Sources */,
 				C4F57DDD2972EBCF00D4BC86 /* Post.swift in Sources */,
+				C45C213D297848F100477886 /* RegisterViewModel.swift in Sources */,
 				C4D51CAD2972065C00F83F49 /* SceneDelegate.swift in Sources */,
 				C4D51CC72972107F00F83F49 /* UIColorExtension.swift in Sources */,
 				C4D51CD02972143E00F83F49 /* StoryCardCollectionViewCellScreen.swift in Sources */,

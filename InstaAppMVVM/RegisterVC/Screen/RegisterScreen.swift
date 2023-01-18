@@ -1,31 +1,30 @@
 //
-//  LoginScreen.swift
+//  RegisterScreen.swift
 //  InstaAppMVVM
 //
-//  Created by Fernando Moreira on 17/01/23.
+//  Created by Fernando Moreira on 18/01/23.
 //
 
 import UIKit
 
-protocol LoginScreenProtocol: AnyObject {
-    func tappedLoginButton()
+protocol RegisterScreenProtocol: AnyObject {
     func tappedRegisterButton()
 }
 
-class LoginScreen: UIView {
+class RegisterScreen: UIView {
 
-    private weak var delegate: LoginScreenProtocol?
+    private weak var delegate: RegisterScreenProtocol?
     
-    public func delegate(delegate: LoginScreenProtocol?) {
+    public func delegate(delegate: RegisterScreenProtocol?) {
         self.delegate = delegate
     }
     
-    lazy var loginLabel: UILabel = {
+    lazy var registerLabel: UILabel = {
        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 40)
-        label.text = "Login"
+        label.text = "Register"
         return label
     }()
     
@@ -55,38 +54,20 @@ class LoginScreen: UIView {
         return tf
     }()
     
-    lazy var loginButton: UIButton = {
+    lazy var registerButton: UIButton = {
        let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Login", for: .normal)
+        btn.setTitle("Register", for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         btn.setTitleColor(.white, for: .normal)
         btn.isEnabled = true
         //btn.backgroundColor = .darkGray.withAlphaComponent(0.6)
         btn.backgroundColor = .systemIndigo
         btn.clipsToBounds = true
-        btn.layer.cornerRadius = 15
-        btn.addTarget(self, action: #selector(tappedLoginButton), for: .touchUpInside)
-        return btn
-    }()
-    
-    lazy var registerButton: UIButton = {
-       let btn = UIButton()
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Create an account", for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        btn.setTitleColor(.white, for: .normal)
-        //btn.isEnabled = true
-        btn.backgroundColor = .systemIndigo
-        btn.clipsToBounds = true
-        btn.layer.cornerRadius = 15
+        btn.layer.cornerRadius = 7.5
         btn.addTarget(self, action: #selector(tappedRegisterButton), for: .touchUpInside)
         return btn
     }()
-    
-    @objc func tappedLoginButton(_ sender: UIButton) {
-        delegate?.tappedLoginButton()
-    }
     
     @objc func tappedRegisterButton(_ sender: UIButton) {
         delegate?.tappedRegisterButton()
@@ -104,21 +85,20 @@ class LoginScreen: UIView {
     }
     
     private func addElements() {
-        addSubview(loginLabel)
+        addSubview(registerLabel)
         addSubview(emailTextField)
         addSubview(passwordTextField)
-        addSubview(loginButton)
         addSubview(registerButton)
     }
     
     private func configConstraints() {
         NSLayoutConstraint.activate([
         
-            loginLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
-            loginLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            loginLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            registerLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
+            registerLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            registerLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             
-            emailTextField.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: 45),
+            emailTextField.topAnchor.constraint(equalTo: registerLabel.bottomAnchor, constant: 45),
             emailTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             emailTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             emailTextField.heightAnchor.constraint(equalToConstant: 45),
@@ -128,12 +108,7 @@ class LoginScreen: UIView {
             passwordTextField.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
             passwordTextField.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
             
-            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 50),
-            loginButton.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
-            loginButton.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
-            loginButton.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
-            
-            registerButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 20),
+            registerButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 50),
             registerButton.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
             registerButton.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
             registerButton.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
@@ -147,3 +122,15 @@ class LoginScreen: UIView {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
