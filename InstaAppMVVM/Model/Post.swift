@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Post {
+struct Post: Codable {
     let profileImage: String
     let userName: String
     let postImage: String

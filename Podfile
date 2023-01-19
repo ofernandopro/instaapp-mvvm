@@ -12,6 +12,9 @@ target 'InstaAppMVVM' do
   end
   
   pod 'SnapKit', '~> 5.6.0'
+  pod 'Alamofire'
+  
+  # Firebase
   pod 'Firebase/Auth'
   pod 'Firebase/Crashlytics'
 

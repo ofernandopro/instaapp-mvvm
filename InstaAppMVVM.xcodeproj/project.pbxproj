@@ -15,6 +15,9 @@
 		C45C2139297848C600477886 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C2138297848C600477886 /* RegisterVC.swift */; };
 		C45C213B297848D900477886 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C213A297848D900477886 /* RegisterScreen.swift */; };
 		C45C213D297848F100477886 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C213C297848F100477886 /* RegisterViewModel.swift */; };
+		C45C21482979865800477886 /* HomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = C45C21472979865800477886 /* HomeData.json */; };
+		C45C214B2979877D00477886 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C214A2979877D00477886 /* HomeService.swift */; };
+		C45C214D2979885900477886 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C214C2979885900477886 /* HomeData.swift */; };
 		C47ADC492976CB17007A7566 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C47ADC482976CB17007A7566 /* GoogleService-Info.plist */; };
 		C47ADC4C2976DC8E007A7566 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC4B2976DC8E007A7566 /* LoginVC.swift */; };
 		C47ADC4F2976DCA9007A7566 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47ADC4E2976DCA9007A7566 /* LoginScreen.swift */; };
@@ -76,6 +79,9 @@
 		C45C2138297848C600477886 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		C45C213A297848D900477886 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		C45C213C297848F100477886 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		C45C21472979865800477886 /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
+		C45C214A2979877D00477886 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		C45C214C2979885900477886 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
 		C47ADC482976CB17007A7566 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C47ADC4B2976DC8E007A7566 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C47ADC4E2976DCA9007A7566 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -232,6 +238,22 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		C45C21462979864100477886 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C45C21472979865800477886 /* HomeData.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C45C21492979876C00477886 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C45C214A2979877D00477886 /* HomeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C47ADC4A2976DC76007A7566 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +313,8 @@
 		C4D51CA92972065C00F83F49 /* InstaAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C45C21492979876C00477886 /* Service */,
+				C45C21462979864100477886 /* Mock */,
 				C45C2130297846D900477886 /* Alert */,
 				C4D51CD4297232C300F83F49 /* Model */,
 				C4D51CC229720F4F00F83F49 /* Extension */,
@@ -367,6 +391,7 @@
 			children = (
 				C4D51CD5297232D100F83F49 /* Story.swift */,
 				C4F57DDC2972EBCF00D4BC86 /* Post.swift */,
+				C45C214C2979885900477886 /* HomeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -574,6 +599,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45C21482979865800477886 /* HomeData.json in Resources */,
 				C4D51CB72972066000F83F49 /* LaunchScreen.storyboard in Resources */,
 				C47ADC492976CB17007A7566 /* GoogleService-Info.plist in Resources */,
 				C4D51CB42972066000F83F49 /* Assets.xcassets in Resources */,
@@ -707,6 +733,7 @@
 				C4223C8E297327580042CBC8 /* PostCollectionViewCellScreen.swift in Sources */,
 				C47ADC532976E423007A7566 /* LoginViewModel.swift in Sources */,
 				C45C2132297846ED00477886 /* Alert.swift in Sources */,
+				C45C214D2979885900477886 /* HomeData.swift in Sources */,
 				C4D51CDE297235F600F83F49 /* StoryCollectionViewCellScreen.swift in Sources */,
 				C45C213B297848D900477886 /* RegisterScreen.swift in Sources */,
 				C4F57DD82972EA3A00D4BC86 /* PostCardCollectionViewCell.swift in Sources */,
@@ -727,6 +754,7 @@
 				C45C213D297848F100477886 /* RegisterViewModel.swift in Sources */,
 				C4D51CAD2972065C00F83F49 /* SceneDelegate.swift in Sources */,
 				C4D51CC72972107F00F83F49 /* UIColorExtension.swift in Sources */,
+				C45C214B2979877D00477886 /* HomeService.swift in Sources */,
 				C4D51CD02972143E00F83F49 /* StoryCardCollectionViewCellScreen.swift in Sources */,
 				C4D51CD6297232D100F83F49 /* Story.swift in Sources */,
 			);

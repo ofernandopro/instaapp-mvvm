@@ -37,9 +37,9 @@ class LoginVC: UIViewController {
 extension LoginVC: LoginScreenProtocol {
     
     func tappedRegisterButton() {
-//        let vc = RegisterVC()
-//        self.navigationController?.pushViewController(vc, animated: true)
-        fatalError()
+        let vc = RegisterVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+        //fatalError()
     }
     
     func tappedLoginButton() {

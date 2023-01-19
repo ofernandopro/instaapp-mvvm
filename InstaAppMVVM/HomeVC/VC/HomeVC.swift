@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeVC: UIViewController {
 
     private var homeScreen: HomeScreen?
     private var viewModel: HomeViewModel = HomeViewModel()
+    
+//    let logOutBarButtonItem = UIBarButtonItem(title: "Log Out", style: .plain, target: self, action: #selector(onSearchButtonClicked))
     
     override func loadView() {
         homeScreen = HomeScreen()
@@ -19,9 +22,39 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeScreen?.configProtocolsCollectionView(delegate: self, dataSource: self)
+        self.title = "InstaApp"
+//        self.navigationItem.rightBarButtonItem  = logOutBarButtonItem
+        //self.navigationItem.rightBarButtonItem  = self.homeScreen?.logOutBarButtonItem
+        viewModel.delegate(delegate: self)
+        viewModel.fetchAllRequest()
     }
+    
+//    @objc func onSearchButtonClicked(){
+//        print(#function)
+//        do {
+//            try Auth.auth().signOut()
+//            let loginVC = LoginVC()
+//            loginVC.modalPresentationStyle = .fullScreen
+//            present(loginVC, animated: true)
+//        } catch {
+//
+//        }
+//    }
 
+}
+
+extension HomeVC: HomeViewModelProtocol {
+    
+    func success() {
+        DispatchQueue.main.async {
+            self.homeScreen?.configProtocolsCollectionView(delegate: self, dataSource: self)
+        }
+    }
+    
+    func error() {
+        print(#function)
+    }
+    
 }
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
